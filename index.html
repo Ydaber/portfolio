@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="J·C·R 深圳广告传媒工作室，专注产品视频与产品拍摄。" />
+    <title>J·C·R — Advertising & Visual Studio</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="#top" aria-label="J C R 首页">J·C·R</a>
+      <nav aria-label="主导航"><a href="#work">WORK</a><a href="#about">ABOUT</a></nav>
+      <a class="contact" href="mailto:studio@jcr.design">CONTACT (STUDIO@JCR.DESIGN)</a>
+    </header>
+    <main id="top">
+      <section class="intro" aria-label="J C R Shenzhen advertising and visual studio"><p>J·C·R — SHENZHEN ADVERTISING &amp; VISUAL STUDIO<br />PRODUCT FILM / PRODUCT PHOTOGRAPHY / VISUAL CONTENT</p><a href="#work">VIEW SELECTED WORK ↓</a></section>
+      <section class="projects" id="work" aria-label="精选项目"><div id="project-list"></div><nav class="project-index" id="project-index" aria-label="项目目录"></nav></section>
+      <section class="about" id="about"><p>J·C·R IS A SHENZHEN-BASED ADVERTISING &amp; VISUAL STUDIO. WE SPECIALISE IN PRODUCT FILM AND PRODUCT PHOTOGRAPHY, CREATING IMAGES THAT CONNECT BRANDS WITH THE THINGS THEY MAKE.</p><a href="mailto:studio@jcr.design">LET'S TALK →</a></section>
+    </main>
+    <footer><span>© <span id="year"></span> J·C·R</span><span>SHENZHEN / CHINA</span><a href="#top">BACK TO TOP ↑</a></footer>
+    <template id="project-template"><article class="project"><button class="project-button" type="button"><img class="project-image" loading="lazy" alt="" /><span class="project-fade"></span><span class="project-name"></span><span class="project-type"></span><span class="project-number"></span></button></article></template>
+    <dialog id="project-modal" class="project-modal"><button class="close" type="button" aria-label="关闭">CLOSE ×</button><div id="modal-content"></div></dialog>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
